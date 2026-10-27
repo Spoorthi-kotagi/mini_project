@@ -20,7 +20,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import axios from "axios";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://mini-project-72ya.onrender.com";
 
 function App() {
   const [cartCount, setCartCount] = useState(0);
