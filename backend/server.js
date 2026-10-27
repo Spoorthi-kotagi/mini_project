@@ -34,9 +34,9 @@ app.get("/api/products", async (req, res) => {
 
         res.json(result.rows);
     } catch (error) {
-        console.error("Error fetching products:", error.message);
-        res.status(500).json({ message: "Failed to fetch products" });
-    }
+    console.error("Error fetching products:", error);
+    res.status(500).json({ message: "Failed to fetch products" });
+}
 });
 
 app.listen(PORT, () => {
